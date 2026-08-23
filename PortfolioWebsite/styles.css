@@ -3,18 +3,34 @@
 
 /*Global default/modifier*/
 body {
-    color: black;
-    background-color: bisque;
+    color: bisque;
+    background-color: #010c13;
     font-family: 'Roboto', sans-serif;
-
 }
 
 h1 {
     /*rem multiplies the measurement by ~16px*/
-    font-size: 3rem;
+    font-size: 5rem;
+}
+
+.main_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 footer {
     display: flex;
     justify-content: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
 }
