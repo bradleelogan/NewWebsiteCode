@@ -6,6 +6,17 @@ body {
     color: bisque;
     background-color: #010c13;
     font-family: 'Roboto', sans-serif;
+        margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: bisque;
+}
+a:hover{
+    color: aqua;
 }
 
 h1 {
@@ -13,10 +24,14 @@ h1 {
     font-size: 5rem;
 }
 
-.main_page {
+.mainPage {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.mainPage iframe{
+    width: 75%;
 }
 
 iframe {
@@ -31,6 +46,6 @@ footer {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
 }
